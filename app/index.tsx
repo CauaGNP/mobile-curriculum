@@ -4,6 +4,7 @@ import image from "../assets/hello.png";
 import { styles } from "./styles";
 
 export default function Index() {
+
   return (
     <View>
       <View>
