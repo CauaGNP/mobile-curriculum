@@ -3,20 +3,31 @@ import { Icon } from "react-native-paper";
 
 export default function RootLayout() {
   return (
-    <Tabs>
+    <Tabs
+    screenOptions={{
+        tabBarActiveTintColor: "#000",   
+        tabBarInactiveTintColor: "#888", 
+      }}>
       <Tabs.Screen
         name="index"
         options={{
           title: "Início",
-          //Mudar os icones
-          tabBarIcon: ({ icon, size }) => <Icon source={icon} size={20} />,
+          
+          tabBarIcon: ({color}) => <Icon source="home" size={30} color={color}/>,
         }}
-      />
+      />                              
       <Tabs.Screen
         name="about"
         options={{
           title: "Sobre",
-          tabBarIcon: ({ icon, size }) => <Icon source={icon} size={20} />,
+          tabBarIcon: ({color}) => <Icon source="account" size={30} color={color}/>,
+        }}
+      />
+      <Tabs.Screen
+        name="github"
+        options={{
+          title: "GitHub",
+          tabBarIcon: ({color}) => <Icon source="github" size={30} color={color}/>,
         }}
       />
     </Tabs>
