@@ -8,6 +8,7 @@ export default function RootLayout() {
         name="index"
         options={{
           title: "Início",
+          //Mudar os icones
           tabBarIcon: ({ icon, size }) => <Icon source={icon} size={20} />,
         }}
       />
