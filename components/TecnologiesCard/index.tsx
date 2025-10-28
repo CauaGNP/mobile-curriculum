@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import { Icon } from "react-native-paper";
+import { styles } from "./styles";
 
 type TecnologiesCardProps = {
   icon: string;
@@ -11,9 +12,9 @@ export function TecnologiesCard({
   tecnologieName,
 }: TecnologiesCardProps) {
   return (
-    <View>
-      <Icon source={icon} size={20} />
+    <View style={styles.stackContain}>
       <Text>{tecnologieName}</Text>
+      <Icon source={icon} size={40} />
     </View>
   );
 }
