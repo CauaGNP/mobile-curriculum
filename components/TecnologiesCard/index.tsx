@@ -13,8 +13,8 @@ export function TecnologiesCard({
 }: TecnologiesCardProps) {
   return (
     <View style={styles.stackContain}>
-      <Text>{tecnologieName}</Text>
-      <Icon source={icon} size={40} />
+      <Text style={{ color: "#113392ff" }}>{tecnologieName}</Text>
+      <Icon source={icon} size={40} color="#113392ff" />
     </View>
   );
 }
