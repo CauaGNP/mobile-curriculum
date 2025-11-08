@@ -2,7 +2,7 @@ import getData from "@/services/githubApi";
 import { useEffect, useState } from "react";
 import { Linking, ScrollView } from "react-native";
 import { ActivityIndicator, List, MD2Colors } from "react-native-paper";
-import { generalStyles, gitHubCard } from "./styles";
+import { generalStyles, gitHubCard } from "../styles/_styles";
 
 export default function GitHub() {
   const [repositoryData, setRepositoryData] = useState<any>(null);

@@ -1,7 +1,7 @@
 import { TecnologiesCard } from "@/components/TecnologiesCard";
 import { Image, ScrollView, Text, View } from "react-native";
 import image from "../assets/hello.png";
-import { generalStyles, indexStyles } from "./styles";
+import { generalStyles, indexStyles } from "../styles/_styles";
 
 export default function Index() {
   return (

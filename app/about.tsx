@@ -2,7 +2,7 @@ import { Image, ScrollView, Text, View } from "react-native";
 import LinkRepository from "../assets/LinkRepository.png";
 import ListComponent from "../assets/ListComponent.png";
 import tecnologiesCardImage from "../assets/tecnologiesCardImage.png";
-import { generalStyles } from "./styles";
+import { generalStyles } from "../styles/_styles";
 export default function About() {
   return (
     <ScrollView style={generalStyles.contain}>
