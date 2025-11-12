@@ -39,6 +39,24 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
+        name="projects"
+        options={{
+          title: "Projetos",
+          tabBarIcon: ({ color }) => (
+            <Icon source="notebook" size={30} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="experience"
+        options={{
+          title: "Experiencia",
+          tabBarIcon: ({ color }) => (
+            <Icon source="lightbulb" size={30} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="github"
         options={{
           title: "GitHub",
